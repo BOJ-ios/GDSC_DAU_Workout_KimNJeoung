@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">workout</string>
+    <string name="title_workout">운동</string>
+    <string name="title_history">기록</string>
+    <string name="title_myinfo">내 정보</string>
+    <string name="title_posture">자세 교정</string>
+</resources>
