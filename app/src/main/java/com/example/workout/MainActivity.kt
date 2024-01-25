@@ -14,9 +14,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val menuItemToIndex = mapOf(
-        R.id.navigation_home to 0,
-        R.id.navigation_dashboard to 1,
-        R.id.navigation_notifications to 2
+        R.id.navigation_workout to 0,
+        R.id.navigation_history to 1,
+        R.id.navigation_posture to 2,
+        R.id.navigation_myinfo to 3
     )
     private var currentMenuItemIndex = 0 // 초기 인덱스
 
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_workout, R.id.navigation_history,R.id.navigation_posture, R.id.navigation_myinfo
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -63,14 +64,17 @@ class MainActivity : AppCompatActivity() {
             currentMenuItemIndex = selectedIndex // 현재 선택된 인덱스 업데이트
 
             when (item.itemId) {
-                R.id.navigation_home -> {
-                    navController.navigate(R.id.navigation_home, null, navOptions)
+                R.id.navigation_workout -> {
+                    navController.navigate(R.id.navigation_workout, null, navOptions)
                 }
-                R.id.navigation_dashboard -> {
-                    navController.navigate(R.id.navigation_dashboard, null, navOptions)
+                R.id.navigation_history -> {
+                    navController.navigate(R.id.navigation_history, null, navOptions)
                 }
-                R.id.navigation_notifications -> {
-                    navController.navigate(R.id.navigation_notifications, null, navOptions)
+                R.id.navigation_posture -> {
+                    navController.navigate(R.id.navigation_posture, null, navOptions)
+                }
+                R.id.navigation_myinfo -> {
+                    navController.navigate(R.id.navigation_myinfo, null, navOptions)
                 }
             }
             true

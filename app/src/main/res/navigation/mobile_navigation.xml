@@ -3,23 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_workout">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.workout.ui.home.WorkoutFragment"
+        android:id="@+id/navigation_workout"
+        android:name="com.example.workout.ui.workout.WorkoutFragment"
         android:label="@string/title_workout"
         tools:layout="@layout/fragment_workout" />
-
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.workout.ui.dashboard.MyinfoFragment"
+        android:id="@+id/navigation_history"
+        android:name="com.example.workout.ui.history.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_myinfo" />
-
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.workout.ui.notifications.HistoryFragment"
+        android:id="@+id/navigation_posture"
+        android:name="com.example.workout.ui.posture.PostureFragment"
+        android:label="@string/title_posture"
+        tools:layout="@layout/fragment_posture" />
+    <fragment
+        android:id="@+id/navigation_myinfo"
+        android:name="com.example.workout.ui.myinfo.MyinfoFragment"
         android:label="@string/title_myinfo"
         tools:layout="@layout/fragment_history" />
 </navigation>
