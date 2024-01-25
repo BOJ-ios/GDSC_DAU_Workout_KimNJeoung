@@ -1,0 +1,11 @@
+
++
+java:S1700"Rename field "device"(ŸšÕ
+k
+java:S1206+"PThis class overrides "equals()" and should therefore also override "hashCode()".(İ¢êÍıÿÿÿÿ
+|
+java:S2178d"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(ù±ƒ
+
+java:S2178f"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(²îü¦ıÿÿÿÿ
+
+java:S2178y"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(²îü¦ıÿÿÿÿ

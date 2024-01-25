@@ -1,0 +1,37 @@
+
+t	java:S115("ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ
+t	java:S115("ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ
+t	java:S115("ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ
+T
+java:S1874="9Remove this use of "setHasOptionsMenu"; it is deprecated.(Ï™ñşÿÿÿÿ
+O
+java:S1874>"9Remove this use of "setRetainInstance"; it is deprecated.(ø“®ô
+C	java:S108c")Either remove or fill this block of code.(©„õÁûÿÿÿÿ
+L
+java:S1874†"0Remove this use of "getColor"; it is deprecated.(à¿¢åıÿÿÿÿ
+`
+java:S1874•"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ƒ†°;
+a
+java:S1874™"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(İõúå
+Q
+java:S1161™":Add the "@Override" annotation above this method signature(İõúå
+a
+java:S1874¤"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñ”Ò
+Q
+java:S1874¿":Remove this use of "requestPermissions"; it is deprecated.(†¨Ïğ
+T
+java:S1874Æ"=Remove this use of "onOptionsItemSelected"; it is deprecated.(Ü°ı‡
+P
+java:S1874Ï"9Remove this use of "getDefaultAdapter"; it is deprecated.(•”¢
+L
+java:S1874ò"0Remove this use of "getColor"; it is deprecated.(ÑÆòÿÿÿÿÿ
+i
+java:S3252ò"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(ÑÆòÿÿÿÿÿ
+i
+java:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(üåĞĞ
+G
+java:S1874˜"0Remove this use of "getColor"; it is deprecated.(Ö£ª¦
+d
+java:S3252˜"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(Ö£ª¦
+f
+java:S1874¨"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ

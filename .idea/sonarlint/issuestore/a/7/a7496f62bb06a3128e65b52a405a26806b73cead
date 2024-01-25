@@ -1,0 +1,31 @@
+
+C
+java:S5411["(Use a primitive boolean expression here.(Ìğ’Œşÿÿÿÿ
+J
+java:S1874."/Remove this use of "Handler"; it is deprecated.(Ù²©·ıÿÿÿÿ
+B
+java:S1602>",Remove useless curly braces around statement(Éâ¿é
+P
+java:S1874F":Remove this use of "getParcelableExtra"; it is deprecated.(á¢‹î
+T
+java:S1874j"9Remove this use of "setHasOptionsMenu"; it is deprecated.(Ï™ñşÿÿÿÿ
+T
+java:S1874l"9Remove this use of "getDefaultAdapter"; it is deprecated.(øêıøÿÿÿÿ
+a
+java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(†¼â
+P
+java:S1874‚"9Remove this use of "onActivityCreated"; it is deprecated.(€…É’
+`
+java:S1874Œ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ƒ†°;
+a
+java:S1874¹"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñ”Ò
+T
+java:S1874Ç"=Remove this use of "onOptionsItemSelected"; it is deprecated.(Ü°ı‡
+?	java:S108á")Either remove or fill this block of code.(¨šşµ
+?	java:S108ä")Either remove or fill this block of code.(¨šşµ
+J
+java:S1874ö"3Remove this use of "startLeScan"; it is deprecated.(†ßË—
+N
+java:S1874•"2Remove this use of "stopLeScan"; it is deprecated.(•Ÿ•Óûÿÿÿÿ
+Q
+java:S1874©":Remove this use of "getFragmentManager"; it is deprecated.(Ìèàƒ

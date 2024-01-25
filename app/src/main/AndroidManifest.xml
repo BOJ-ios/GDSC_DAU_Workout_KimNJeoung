@@ -2,6 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <!-- <= 30 + Xiaomi/MIUI -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30"/>
+    <!-- >= API 31 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,19 +26,10 @@
         android:theme="@style/Theme.Workout"
         tools:targetApi="31">
         <activity
-            android:name=".ui.sampledata.Test2Activity"
+            android:name=".simple_bluetooth_le_terminal.BluetoothActivity"
             android:exported="false"
-            android:label="@string/title_activity_test2"
-            android:theme="@style/Theme.Workout" />
-        <activity
-            android:name=".ui.sampledata.TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.sampledata.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/Theme.Workout.Fullscreen" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -36,6 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name="com.example.workout.simple_bluetooth_le_terminal.SerialService"
+            android:foregroundServiceType="remoteMessaging|connectedDevice" />
     </application>
 
 </manifest>

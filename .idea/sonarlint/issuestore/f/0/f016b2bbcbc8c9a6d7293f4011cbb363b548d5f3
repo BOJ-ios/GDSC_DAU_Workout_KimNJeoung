@@ -1,0 +1,54 @@
+
+d
+java:S1192ü"MDefine a constant instead of duplicating this literal "write failed" 3 times.(óåÒï
+`
+java:S2583"DChange this condition so that it does not always evaluate to "false"(‚Ùšñùÿÿÿÿ
+`
+java:S2583Ó"DChange this condition so that it does not always evaluate to "false"(‚Ùšñùÿÿÿÿ
+P
+java:S3516ÿ"9Refactor this method to not always return the same value.(•·ã´
+L
+java:S1659R"1Declare "writeCharacteristic" on a separate line.(¼µîÎúÿÿÿÿ
+>
+java:S1172)"(Remove this unused method parameter "s".(‘ï’ú
+?	java:S108‰")Either remove or fill this block of code.(¨šşµ
+D	java:S108")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
+D	java:S108“")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
+Q
+java:S1117±":Rename "device" which hides the field declared at line 80.(á¢‹î
+Q
+java:S1874±":Remove this use of "getParcelableExtra"; it is deprecated.(á¢‹î
+i
+java:S3776à"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(íÓ•ÿ
+L
+java:S1874©"0Remove this use of "setValue"; it is deprecated.(âŞóúøÿÿÿÿ
+L
+java:S1874¬"0Remove this use of "setValue"; it is deprecated.(µ¸óñÿÿÿÿÿ
+S
+java:S1874²"7Remove this use of "writeDescriptor"; it is deprecated.(ûÛ şÿÿÿÿ
+f
+java:S1874Ï"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ßãÆÑşÿÿÿÿ
+G
+java:S1874Ö"0Remove this use of "getValue"; it is deprecated.(ù²„¥
+G
+java:S1874ú"0Remove this use of "setValue"; it is deprecated.(ÈÓÓä
+R
+java:S1874û";Remove this use of "writeCharacteristic"; it is deprecated.(Î”éş
+L
+java:S1874¡"0Remove this use of "setValue"; it is deprecated.(ÎŒáåıÿÿÿÿ
+R
+java:S1874¢";Remove this use of "writeCharacteristic"; it is deprecated.(Î”éş
+O
+java:S1659û"8Declare "writeCreditsCharacteristic" on a separate line.(‚€Õğ
+A
+java:S1659ü"*Declare "writeCredits" on a separate line.(ŞÀˆµ
+G
+java:S1874 "0Remove this use of "setValue"; it is deprecated.(ÿğåù
+S
+java:S1874¢"7Remove this use of "writeDescriptor"; it is deprecated.(÷ê»¯ÿÿÿÿÿ
+G
+java:S1874Ä"0Remove this use of "getValue"; it is deprecated.(ê¡ÕÛ
+L
+java:S1874û"0Remove this use of "setValue"; it is deprecated.(§ô—ôøÿÿÿÿ
+W
+java:S1874ü";Remove this use of "writeCharacteristic"; it is deprecated.(æõıÿÿÿÿ
