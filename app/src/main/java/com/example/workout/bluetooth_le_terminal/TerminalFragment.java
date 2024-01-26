@@ -1,4 +1,4 @@
-package com.example.workout.simple_bluetooth_le_terminal;
+package com.example.workout.bluetooth_le_terminal;
 
 import android.Manifest;
 import android.app.Activity;
@@ -37,7 +37,6 @@ import com.example.workout.R;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.StringTokenizer;
 
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 

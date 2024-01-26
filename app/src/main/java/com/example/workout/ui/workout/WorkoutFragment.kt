@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.workout.R
-import com.example.workout.simple_bluetooth_le_terminal.BluetoothActivity
+import com.example.workout.bluetooth_le_terminal.BluetoothActivity
 
 class WorkoutFragment : Fragment() {
     override fun onCreateView(

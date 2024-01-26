@@ -1,0 +1,39 @@
+
+{	java:S115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ8‚Ì¸™Ô1
+{	java:S115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ8ƒÌ¸™Ô1
+{	java:S115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÂçùÿÿÿÿ8ƒÌ¸™Ô1
+L
+java:S1874C"/Remove this use of "Handler"; it is deprecated.(èïå»8ˆÌ¸™Ô1
+[
+java:S1874N"9Remove this use of "setHasOptionsMenu"; it is deprecated.(Ï™ñşÿÿÿÿ8ŠÌ¸™Ô1
+V
+java:S1874O"9Remove this use of "setRetainInstance"; it is deprecated.(ø“®ô8ŠÌ¸™Ô1
+J	java:S108t")Either remove or fill this block of code.(©„õÁûÿÿÿÿ8’Ì¸™Ô1
+S
+java:S1874—"0Remove this use of "getColor"; it is deprecated.(à¿¢åıÿÿÿÿ8—Ì¸™Ô1
+g
+java:S1874×"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ƒ†°;8Èæ¸™Ô1
+h
+java:S1874Û"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(İõúå8Éæ¸™Ô1
+X
+java:S1161Û":Add the "@Override" annotation above this method signature(İõúå8Êæ¸™Ô1
+h
+java:S1874æ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñ”Ò8Ìæ¸™Ô1
+X
+java:S1874":Remove this use of "requestPermissions"; it is deprecated.(†¨Ïğ8Ôæ¸™Ô1
+[
+java:S1874ˆ"=Remove this use of "onOptionsItemSelected"; it is deprecated.(Ü°ı‡8Õæ¸™Ô1
+W
+java:S1874‘"9Remove this use of "getDefaultAdapter"; it is deprecated.(•”¢8Öæ¸™Ô1
+S
+java:S1874´"0Remove this use of "getColor"; it is deprecated.(ÑÆòÿÿÿÿÿ8áæ¸™Ô1
+p
+java:S3252´"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(ÑÆòÿÿÿÿÿ8âæ¸™Ô1
+p
+java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(üåĞĞ8äæ¸™Ô1
+N
+java:S1874‡"0Remove this use of "getColor"; it is deprecated.(Ö£ª¦8ùæ¸™Ô1
+k
+java:S3252‡"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(Ö£ª¦8úæ¸™Ô1
+m
+java:S1874—"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8ıæ¸™Ô1

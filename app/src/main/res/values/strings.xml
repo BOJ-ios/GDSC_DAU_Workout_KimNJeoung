@@ -1,18 +1,10 @@
 <resources>
     <string name="app_name">workout</string>
+    <!--fragment label-->
     <string name="title_workout">운동</string>
     <string name="title_history">기록</string>
     <string name="title_posture">자세 교정</string>
     <string name="title_myinfo">내 정보</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="title_activity_test2">Test2Activity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
     <!--블루투스 시리얼 통신 관련-->
     <string name="devices">Bluetooth LE Devices</string>

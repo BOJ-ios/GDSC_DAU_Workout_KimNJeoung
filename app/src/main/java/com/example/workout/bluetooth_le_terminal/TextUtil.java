@@ -1,4 +1,4 @@
-package com.example.workout.simple_bluetooth_le_terminal;
+package com.example.workout.bluetooth_le_terminal;
 
 import android.text.Editable;
 import android.text.InputType;

@@ -95,3 +95,5 @@ Xapp/src/main/java/com/example/workout/simple_bluetooth_le_terminal/TerminalFrag
 Tapp/src/main/java/com/example/workout/simple_bluetooth_le_terminal/SerialSocket.java,f\0\f016b2bbcbc8c9a6d7293f4011cbb363b548d5f3
 Ü
 Vapp/src/main/java/com/example/workout/simple_bluetooth_le_terminal/SerialListener.java,d\e\de6d40544697b9c6eef097727bd27427e6031ab6
+Å
+Qapp/src/main/java/com/example/workout/bluetooth_le_terminal/TerminalFragment.java,b\2\b23e109b7df0b5ceb07c6d2db913ba6b4618b683
