@@ -14,6 +14,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!--블루투스 시리얼 통신 관련-->
     <string name="devices">Bluetooth LE Devices</string>
 
     <string name="bluetooth_permission_title">Bluetooth permission</string>
@@ -25,4 +26,15 @@
     <string name="location_permission_denied">As location permission has not been granted, this app cannot scan for Bluetooth LE devices.</string>
 
     <string name="pairing_request">PAIRING requested\n-> Perform pairing steps. Connect again</string>
+    <!--블루투스로 받은 정보 출력-->
+    <string name="total_count">총 %1$d개</string>
+    <string name="time_difference">%1$.2f초</string>
+    <string name="fast_count">%1$d번 빠름</string>
+    <string name="slow_count">%1$d번 느림</string>
+    <string name="total_time">%1$d시간 %2$d분 %3$d초</string>
+    <string name="current_distance">%1$.2fcm</string>
+    <string name="speed_faster">더 빠르게</string>
+    <string name="speed_slower">조금 느리게</string>
+    <string name="speed_appropriate">적당한 속도</string>
+    <string name="speed_unknown">정보 없음</string>
 </resources>

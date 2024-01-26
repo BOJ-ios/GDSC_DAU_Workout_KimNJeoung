@@ -2,9 +2,9 @@
 d
 java:S1192ό"MDefine a constant instead of duplicating this literal "write failed" 3 times.(σεÒο
 `
-java:S2583"DChange this condition so that it does not always evaluate to "false"(‚Ωρωÿÿÿÿ
-`
 java:S2583Σ"DChange this condition so that it does not always evaluate to "false"(‚Ωρωÿÿÿÿ
+`
+java:S2583"DChange this condition so that it does not always evaluate to "false"(‚Ωρωÿÿÿÿ
 P
 java:S3516ÿ"9Refactor this method to not always return the same value.(•·γ΄
 L

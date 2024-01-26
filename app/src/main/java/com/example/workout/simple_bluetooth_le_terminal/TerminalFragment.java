@@ -11,18 +11,21 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.method.ScrollingMovementMethod;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +37,7 @@ import com.example.workout.R;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 
@@ -51,7 +55,21 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     private boolean hexEnabled = false;
     private boolean pendingNewline = false;
     private String newline = TextUtil.newline_crlf;
+    //!커스텀 텍스트뷰
+    private TextView currentDistance;
+    private TextView fastOrSlow;
+    private TextView totalCount;
+    private TextView timeDifference;
+    private TextView fastCount;
+    private TextView slowCount;
+    private TextView totalTime;
 
+    //!타이머
+    private Handler timerHandler = new Handler();
+    private Runnable timerRunnable;
+    private long startTime = 0;
+    //!변수
+    private int count=0;
     /*
      * Lifecycle
      */
@@ -140,8 +158,57 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         sendText.addTextChangedListener(hexWatcher);
         sendText.setHint(hexEnabled ? "HEX mode" : "");
 
+        //전송 버튼
         View sendBtn = view.findViewById(R.id.send_btn);
         sendBtn.setOnClickListener(v -> send(sendText.getText().toString()));
+        //!커스텀 버튼
+        Button startBtn = view.findViewById(R.id.start_btn);
+        Button stopBtn = view.findViewById(R.id.stop_btn);
+        Button setDefaultBtn = view.findViewById(R.id.set_default_btn);
+        Button setTimeBtn = view.findViewById(R.id.set_time_btn);
+        TextView timeText = view.findViewById(R.id.time_text);
+        startBtn.setOnClickListener(v -> {
+            send("/start");
+            count=0;
+            totalCount.setText(getString(R.string.total_count, count));
+            startTime = System.currentTimeMillis();
+            timerRunnable = new Runnable() {
+                @Override
+                public void run() {
+                    long millis = System.currentTimeMillis() - startTime;
+                    int seconds = (int) (millis / 1000);
+                    int minutes = seconds / 60;
+                    seconds = seconds % 60;
+                    int hours = minutes / 60;
+                    minutes = minutes % 60;
+
+                    totalTime.setText(getString(R.string.total_time,  hours, minutes, seconds));
+                    timerHandler.postDelayed(this, 500);
+                }
+            };
+            timerHandler.postDelayed(timerRunnable, 0);
+            v.setEnabled(false);
+            stopBtn.setEnabled(true);
+        });
+        stopBtn.setOnClickListener(v -> {
+            send("/stop");
+            timerHandler.removeCallbacks(timerRunnable);
+            v.setEnabled(false);
+            startBtn.setEnabled(true);
+        });
+        setDefaultBtn.setOnClickListener(v -> send("/setdist"));
+        setTimeBtn.setOnClickListener(v -> {
+            send("/settime " + sendText.getText().toString());
+            timeText.setText(sendText.getText().toString());
+        });
+        //!커스텀 텍스트 뷰
+        currentDistance = view.findViewById(R.id.current_distance_text);
+        totalCount= view.findViewById(R.id.total_count);
+        fastOrSlow= view.findViewById(R.id.fast_slow_text);
+        timeDifference= view.findViewById(R.id.time_difference_text);
+        fastCount= view.findViewById(R.id.fastCount_text);
+        slowCount= view.findViewById(R.id.slowCount_text);
+        totalTime = view.findViewById(R.id.total_time_text);
         return view;
     }
 
@@ -254,6 +321,9 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                 spn.append(TextUtil.toHexString(data)).append('\n');
             } else {
                 String msg = new String(data);
+                if(msg.length()>=5){
+                isDataCheck(msg);
+                }
                 if (newline.equals(TextUtil.newline_crlf) && msg.length() > 0) {
                     // don't show CR as ^M if directly before LF
                     msg = msg.replace(TextUtil.newline_crlf, TextUtil.newline_lf);
@@ -274,6 +344,48 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         }
         receiveText.append(spn);
     }
+
+    //! data 받기
+    private void isDataCheck(String str) {
+        if (str.startsWith("data")) {
+            Log.d("data", str);
+            String[] tokens = str.trim().split(" ");
+            try {
+                int dataNumber = Integer.parseInt(tokens[1]);
+                switch (dataNumber) {
+                    case 0:
+                        currentDistance.setText(getString(R.string.current_distance, Double.parseDouble(tokens[2])));
+                        break;
+                    case 1:
+                        int speed = Integer.parseInt(tokens[2]);
+                        switch (speed) {
+                            case 0:
+                                fastOrSlow.setText(R.string.speed_faster);
+                                break;
+                            case 1:
+                                fastOrSlow.setText(R.string.speed_slower);
+                                break;
+                            case 2:
+                                fastOrSlow.setText(R.string.speed_appropriate);
+                                break;
+                            default:
+                                fastOrSlow.setText(R.string.speed_unknown);
+                        }
+                        totalCount.setText(getString(R.string.total_count, ++count));
+                        timeDifference.setText(getString(R.string.time_difference, Double.parseDouble(tokens[3])));
+                        break;
+                    case 2:
+                        fastCount.setText(getString(R.string.fast_count, Integer.parseInt(tokens[2])));
+                        slowCount.setText(getString(R.string.slow_count, Integer.parseInt(tokens[3])));
+                        break;
+                    default:
+                }
+            } catch (NumberFormatException e) {
+                Log.e("DataCheck", "Number format exception", e);
+            }
+        }
+    }
+
 
     private void status(String str) {
         SpannableStringBuilder spn = new SpannableStringBuilder(str + '\n');
