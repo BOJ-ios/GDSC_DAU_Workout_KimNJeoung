@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical">
 
     <TextView
@@ -18,111 +18,189 @@
 
     <View
         android:layout_width="match_parent"
-        android:background="?android:attr/listDivider"
-        android:layout_height="2dp" />
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        >
-        <TextView
-            android:id="@+id/current_distance_text"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0.0">
-        </TextView>
-        <TextView
-            android:id="@+id/total_count"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="운동시간"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/total_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0시간0분0초"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="총 개수">
-        </TextView>
-        <TextView
-            android:id="@+id/fast_slow_text"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="횟수"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="총 개수"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가동 범위"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/current_distance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0cm"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="느렸는가빨랐는가">
-        </TextView>
-        <TextView
-            android:id="@+id/time_difference_text"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/time_difference_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0초 차이"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/fast_slow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="느렸는가?빨랐는가?"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0.0">
-        </TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="결과 : " >
-        </TextView>
-        <TextView
-            android:id="@+id/fastCount_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0번">
-        </TextView>
-        <TextView
-            android:id="@+id/slowCount_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0번">
-        </TextView>
-        <TextView
-            android:id="@+id/total_time_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0시간0분0초">
-        </TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/start_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="시작">
-        </Button>
-        <Button
-            android:id="@+id/stop_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="종료">
-        </Button>
-        <Button
-            android:id="@+id/set_default_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="기본값설정">
-        </Button>
-        <Button
-            android:id="@+id/set_time_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="시간설정">
-        </Button>
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결과 : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fastCount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0번 빨랐음"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/slowCount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0번느렸음"
+                android:textSize="20sp" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0.0">
-        </TextView>
+            android:text="0.0초"
+            android:layout_marginBottom="20dp" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_btn"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작"/>
+
+        <Button
+            android:id="@+id/stop_btn"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종료"/>
+
+        <Button
+            android:id="@+id/set_default_btn"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기본값설정"/>
+
+        <Button
+            android:id="@+id/set_time_btn"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간설정"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

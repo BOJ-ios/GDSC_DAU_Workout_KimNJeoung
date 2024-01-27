@@ -21,6 +21,13 @@ public class BluetoothActivity extends AppCompatActivity implements FragmentMana
             getSupportFragmentManager().beginTransaction().add(R.id.fragment, new DevicesFragment(), "devices").commit();
         else
             onBackStackChanged();
+
+        setTitle("블루투스 연결");
+
+        // 뒤로 가기 버튼 활성화
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     @Override

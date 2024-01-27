@@ -164,7 +164,7 @@ public class SerialService extends Service implements SerialListener {
                 .setPackage(getPackageName())
                 .setAction(Constants.INTENT_ACTION_DISCONNECT);
         Intent restartIntent = new Intent()
-                .setClassName(this, Constants.INTENT_CLASS_MAIN_ACTIVITY)
+                .setClassName(this, Constants.INTENT_CLASS_BLUETOOTH_ACTIVITY)
                 .setAction(Intent.ACTION_MAIN)
                 .addCategory(Intent.CATEGORY_LAUNCHER);
         int flags = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_IMMUTABLE : 0;

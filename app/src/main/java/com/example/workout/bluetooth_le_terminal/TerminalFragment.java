@@ -78,6 +78,9 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         setHasOptionsMenu(true);
         setRetainInstance(true);
         deviceAddress = getArguments().getString("device");
+        if (getActivity() != null) {
+            getActivity().setTitle("당기는 운동 1");
+        }
     }
 
     @Override

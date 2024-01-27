@@ -8,32 +8,32 @@ java:S1874C"/Remove this use of "Handler"; it is deprecated.(èïå»8ˆÌ¸™Ô1
 java:S1874N"9Remove this use of "setHasOptionsMenu"; it is deprecated.(Ï™ñşÿÿÿÿ8ŠÌ¸™Ô1
 V
 java:S1874O"9Remove this use of "setRetainInstance"; it is deprecated.(ø“®ô8ŠÌ¸™Ô1
-J	java:S108t")Either remove or fill this block of code.(©„õÁûÿÿÿÿ8’Ì¸™Ô1
+J	java:S108w")Either remove or fill this block of code.(©„õÁûÿÿÿÿ8ªƒæ®Ô1
 S
-java:S1874—"0Remove this use of "getColor"; it is deprecated.(à¿¢åıÿÿÿÿ8—Ì¸™Ô1
+java:S1874š"0Remove this use of "getColor"; it is deprecated.(à¿¢åıÿÿÿÿ8¯ƒæ®Ô1
 g
-java:S1874×"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ƒ†°;8Èæ¸™Ô1
+java:S1874Ú"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ƒ†°;8¹ƒæ®Ô1
 h
-java:S1874Û"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(İõúå8Éæ¸™Ô1
+java:S1874Ş"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(İõúå8¹ƒæ®Ô1
 X
-java:S1161Û":Add the "@Override" annotation above this method signature(İõúå8Êæ¸™Ô1
+java:S1161Ş":Add the "@Override" annotation above this method signature(İõúå8ºƒæ®Ô1
 h
-java:S1874æ"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñ”Ò8Ìæ¸™Ô1
+java:S1874é"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñ”Ò8¼ƒæ®Ô1
 X
-java:S1874":Remove this use of "requestPermissions"; it is deprecated.(†¨Ïğ8Ôæ¸™Ô1
+java:S1874„":Remove this use of "requestPermissions"; it is deprecated.(†¨Ïğ8Äƒæ®Ô1
 [
-java:S1874ˆ"=Remove this use of "onOptionsItemSelected"; it is deprecated.(Ü°ı‡8Õæ¸™Ô1
+java:S1874‹"=Remove this use of "onOptionsItemSelected"; it is deprecated.(Ü°ı‡8Äƒæ®Ô1
 W
-java:S1874‘"9Remove this use of "getDefaultAdapter"; it is deprecated.(•”¢8Öæ¸™Ô1
+java:S1874”"9Remove this use of "getDefaultAdapter"; it is deprecated.(•”¢8Åƒæ®Ô1
 S
-java:S1874´"0Remove this use of "getColor"; it is deprecated.(ÑÆòÿÿÿÿÿ8áæ¸™Ô1
+java:S1874·"0Remove this use of "getColor"; it is deprecated.(ÑÆòÿÿÿÿÿ8Êƒæ®Ô1
 p
-java:S3252´"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(ÑÆòÿÿÿÿÿ8âæ¸™Ô1
+java:S3252·"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(ÑÆòÿÿÿÿÿ8Ëƒæ®Ô1
 p
-java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(üåĞĞ8äæ¸™Ô1
+java:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(üåĞĞ8Ìƒæ®Ô1
 N
-java:S1874‡"0Remove this use of "getColor"; it is deprecated.(Ö£ª¦8ùæ¸™Ô1
+java:S1874Š"0Remove this use of "getColor"; it is deprecated.(Ö£ª¦8Öƒæ®Ô1
 k
-java:S3252‡"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(Ö£ª¦8úæ¸™Ô1
+java:S3252Š"MUse static access with "android.text.Spanned" for "SPAN_EXCLUSIVE_EXCLUSIVE".(Ö£ª¦8×ƒæ®Ô1
 m
-java:S1874—"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8ıæ¸™Ô1
+java:S1874š"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8Øƒæ®Ô1

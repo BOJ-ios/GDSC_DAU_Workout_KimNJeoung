@@ -86,7 +86,7 @@ public class BluetoothUtil {
         builder.setNegativeButton("Cancel", null);
         builder.setPositiveButton("Settings", (dialog, which) ->
                 fragment.startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                        Uri.parse("package:" + "com.example.workout"))));
+                        Uri.parse("package:" + "com.example.workout.bluetooth_le_terminal"))));
         builder.show();
     }
 
@@ -97,9 +97,9 @@ public class BluetoothUtil {
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
             return true;
         boolean missingPermissions = fragment.getActivity().checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED
-                                   | fragment.getActivity().checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED;
+                                   || fragment.getActivity().checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED;
         boolean showRationale = fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_CONNECT)
-                              | fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_SCAN);
+                              || fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_SCAN);
         String[] permissions = new String[]{Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.BLUETOOTH_SCAN};
         if(missingPermissions) {
             if (showRationale) {
@@ -118,7 +118,7 @@ public class BluetoothUtil {
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
             return;
         boolean showRationale = fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_CONNECT)
-                              | fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_SCAN);
+                              || fragment.shouldShowRequestPermissionRationale(Manifest.permission.BLUETOOTH_SCAN);
         boolean granted = grants.values().stream().reduce(true, (a, b) -> a && b);
         if (granted) {
             cb.call();
