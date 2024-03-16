@@ -1,20 +1,0 @@
-
-Zkotlin:S6615X";Remove this variable, which is assigned but never accessed.(Ê´çü8şøÎŠÔ1
-Jkotlin:S6615Z"&The value assigned here is never used.(Ø§ºøÿÿÿÿ8şøÎŠÔ1
-vkotlin:S117y"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(âõ€Íûÿÿÿÿ8„ùÎŠÔ1
-vkotlin:S117z"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(åÀ‡™ùÿÿÿÿ8„ùÎŠÔ1
-Lkotlin:S108m")Either remove or fill this block of code.(‘Ù²şùÿÿÿÿ8ˆùÎŠÔ1
-Gkotlin:S108p")Either remove or fill this block of code.(õ°‰¬8ŠùÎŠÔ1
-Gkotlin:S108u")Either remove or fill this block of code.(šÂÕÍ8ŠùÎŠÔ1
-Lkotlin:S108c")Either remove or fill this block of code.(•Ô¬šøÿÿÿÿ8ŠùÎŠÔ1
-Lkotlin:S108e")Either remove or fill this block of code.(ÈÒÑúÿÿÿÿ8ŠùÎŠÔ1
-Lkotlin:S108g")Either remove or fill this block of code.(ÌÑÑÆûÿÿÿÿ8ŠùÎŠÔ1
-Lkotlin:S108i")Either remove or fill this block of code.(‚±Ò©ûÿÿÿÿ8ŠùÎŠÔ1
-Wkotlin:S1481z"3Remove this unused "device_Address" local variable.(åÀ‡™ùÿÿÿÿ8ùÎŠÔ1
-Bkotlin:S1874"#Deprecated code should not be used.(´›á©8•ùÎŠÔ1
-Gkotlin:S1874W"#Deprecated code should not be used.(ÍÊ†”úÿÿÿÿ8•ùÎŠÔ1
-vkotlin:S3776E"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¯‘È™ÿÿÿÿÿ8–ùÎŠÔ1
-wkotlin:S3776€"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ğ¬Ã¾şÿÿÿÿ8—ùÎŠÔ1
-qkotlin:S3776R"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ºÄÓ±8—ùÎŠÔ1
-Skotlin:S1066†".Merge this "if" statement with the nested one.(é“œîüÿÿÿÿ8ùÎŠÔ1
-Rkotlin:S1066}".Merge this "if" statement with the nested one.(‚ò¯Áÿÿÿÿÿ8ùÎŠÔ1
